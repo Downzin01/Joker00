@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="shortcut icon" href="src/img/cloudy.png" type="image/x-icon">
+    <title>Previsão do Tempo</title>
+    <script src="https://kit.fontawesome.com/a692e1c39f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main class="container">
+        <header class="weather__header">
+            <form class="weather__search" aria-label="Buscar cidade">
+                <input type="text" placeholder="Buscar cidade..." class="weather__searchform" aria-label="Campo de busca de cidade">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </form>
+        </header>
+        
+        <section class="weather__body">
+            <h1 class="weather__city" aria-label="Cidade"></h1>
+            <p class="weather__datetime" aria-label="Data e hora"></p>
+            
+            <section class="weather__details">
+                <figure class="weather__details-figure">
+                    <div class="weather__icon" aria-label="Ícone do tempo"></div>
+                    <figcaption>
+                        <h2 class="weather__forecast"></h2>
+                    </figcaption>
+                </figure>
+        
+                <article class="weather__details-article">
+                    <p class="weather__temperature"></p>
+                    <div class="weather__minmax">
+                        <p class="weather__min">Min: 12&#176;</p>
+                        <p class="weather__max">Max: 16&#176;</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+        
+        <section class="weather__info" aria-label="Informações adicionais do tempo">
+            <div class="weather__card">
+                <i class="fa-solid fa-temperature-full" aria-hidden="true"></i>
+                <div>
+                    <p>Sensação</p>
+                    <p class="weather__realfeel">18&#176;</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-droplet" aria-hidden="true"></i>
+                <div>
+                    <p>Umidade</p>
+                    <p class="weather__humidity">60%</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-wind" aria-hidden="true"></i>
+                <div>
+                    <p>Vento</p>
+                    <p class="weather__wind">15 km/h</p>
+                </div>
+            </div>
+            <div class="weather__card">
+                <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+                <div>
+                    <p>Pressão</p>
+                    <p class="weather__pressure">1015 hPa</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="src/js/script.js"></script>
+</body>
+</html>
