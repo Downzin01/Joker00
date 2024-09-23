@@ -1,0 +1,13 @@
+{
+  "name": "joker00",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "prettier": "prettier --write \"**/*.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
