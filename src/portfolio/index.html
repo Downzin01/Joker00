@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="./src/img/aboutme/cat.gif" type="image/x-icon">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="hearder">
+        <a href="#" class="logo"><span>Downzin</span></a>
+    
+        <ul class="nav-links" id="nav-links"></ul>
+
+        <i class="fa-solid fa-bars" id="menu-icon"></i>
+        <a href="https://github.com/Downzin01" target="_blank">
+            <button class="button-github">
+                <i class="fa-brands fa-github gitHubButton"></i> Github
+            </button>
+        </a>
+        
+    </header>
+
+    <section id="home" class="home">
+        <div class="home home-container">
+            <img src="./src/img/image.jpg" alt="" srcset="">
+        </div>
+
+        <div class="home-infobox">
+            <div class="home-text">
+                <h3>Oi, eu sou</h3>
+                <h1>Matheus</h1>
+                <span id="typing-text">Fullstack Developer</span>
+            </div>
+
+            <div class="home-button_group">
+                <a class="home-button" href="#">Download CV</a>
+                <a class="home-button" href="#contact">Contato</a>
+            </div>
+
+            <div class="home-socials" id="home-socials"></div>
+        </div>
+    </section>
+
+    <section id="about-me" class="about-me">
+        <div class="about-content">
+            <h2 class="section-title">Sobre Mim</h2>
+            
+            <div class="about-paragraph">
+                <img src="./src/img/aboutme/ena.gif" alt="Imagem 1" class="about-image left">
+                <p>
+                    Olá! Meu nome é <strong>Matheus</strong>, na web conhecido como Downzin, um desenvolvedor apaixonado por tecnologia, inovação e resolver problemas através da programação. Com especialização em <strong>React.js</strong> e <strong>JavaScript</strong>, adoro criar experiências digitais que fazem a diferença, combinando design criativo com soluções eficazes.
+                </p>
+            </div>
+    
+            <div class="about-paragraph">
+                <img src="./src/img/aboutme/futuba.gif" alt="Imagem 2" class="about-image right">
+                <p>
+                    Ao longo da minha jornada, tive a oportunidade de trabalhar em diversos projetos pessoais e profissionais, aprimorando minhas habilidades em front-end, especialmente em frameworks modernos. Sempre em busca de novos desafios, me mantenho atualizado com as últimas tendências tecnológicas e me esforço para desenvolver código limpo e eficiente.
+                </p>
+            </div>
+    
+            <div class="about-paragraph">
+                <img src="./src/img/aboutme/cat.gif" alt="Imagem 3" class="about-image left">
+                <p>
+                    Quando não estou codificando, você pode me encontrar explorando o mundo da música no <a href="https://open.spotify.com/user/z2bs8fmip8jk1pz3n7a89i55p" target="_blank">Spotify</a>, compartilhando ideias e aprendizados no <a href="https://discord.com/users/576935681167982595" target="_blank">Discord</a>, ou colaborando com outros desenvolvedores no <a href="https://github.com/Downzin01" target="_blank">GitHub</a>. Sinta-se à vontade para conferir meus projetos e me seguir nas redes sociais!
+                </p>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <section id="projects" class="projects">
+        <h2 class="section-title">Projetos</h2>
+        <div class="projects-grid" id="projects-grid"></div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2 class="section-title">Contato</h2>
+        <div class="contact-container">
+            <div class="input-texts">
+                <form action="https://api.staticforms.xyz/submit" method="post" class="contato-form">
+                    <input type="text" name="name" placeholder="Digite seu nome" class="contato-input" required />
+                    <input type="email" name="email" placeholder="Digite seu Email" class="contato-input" required />                          
+                    <textarea name="message" rows="10" placeholder="Digite sua mensagem" class="contato-input" required></textarea>
+                    <div class="contato-buttons">
+                        <input type="submit" value="Enviar" class="button button--border"/>
+                        <input type="reset" value="Limpar" class="button button--border"/>
+                    </div>
+                    <input type="hidden" name="accessKey" value="8f0572ff-e730-49ee-b506-935d1f51762f">
+                    <input type="hidden" name="redirectTo" value="https://downzin01.github.io/downzin.me/pages/obrigado.html"> 
+                </form>
+            </div>
+            <div class="contact-img">
+                <img src="./src/img/aubrey.gif" alt="Aubrey feliz" class="contato-image">
+                <p>Aubrey fica feliz quando você ajuda o Downzin.</p>
+                <p>Faz ela ter mais melancias!</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about-me">Sobre mim</a></li>
+            <li><a href="#projects">Projetos</a></li>
+            <li><a href="#contact">Contato</a></li>
+        </ul>
+
+        <div class="footer-socials" id="footer-socials">
+        </div>
+
+        <p class="copyright">Copyright &copy; 2024 Downzin</p>
+        </footer>
+
+    <script type="module" src="./src/js/script.js"></script>
+</body>
+</html>
