@@ -1,0 +1,122 @@
+:root {
+    --cor-texto-claro: #f0f0f0;
+    --cor-texto-escuro: #444;
+
+    --cor-fundo-claro: #f0f0f0;
+    --cor-fundo-escuro: #444;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--cor-fundo-claro);
+    color: var(--cor-texto-escuro);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90dvh;
+    padding: 20px; /* Adiciona padding para telas pequenas */
+}
+
+.card-menu {
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 550px;
+    margin-top: 70px;
+}
+
+.card-menu-titulo {
+    font-size: 2rem;
+}
+
+.card-menu-enviar {
+    margin-top: 15px;
+}
+
+.card-menu-img {
+    width: 150px; 
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-bottom: 10px;
+}
+
+.card-menu-botao {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #f0db4f;
+    color: #333;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: padding 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; 
+    margin: 5px;
+}
+
+.card-menu-botao:hover {
+    background-color: #e5c72e; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.card-menu-botao:active {
+    padding: 10px 10px; 
+    background-color: #d4b82b; 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.card-menu-copy {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card-menu-copy a {
+    color: #d4b82b;
+    text-decoration: none;
+}
+
+@media (max-width: 600px) {
+    .card-menu-titulo {
+        font-size: 1.5rem;
+    }
+
+    #botoesContainer { 
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 10px; 
+    }
+
+    .card-menu-botao {
+        width: 100%; 
+        font-size: 14px; 
+    }
+
+    .card-menu-img {
+        width: 100px; 
+        height: 100px; 
+    }
+}
+
+@media (max-width: 400px) {
+    .card-menu {
+        padding: 20px; /* Aumenta o padding em telas muito pequenas */
+    }
+
+    .card-menu-titulo {
+        font-size: 1.25rem; /* Reduz ainda mais o tamanho da fonte */
+    }
+}
