@@ -1,0 +1,20 @@
+{
+    "links": [
+        {
+            "text": "Home",
+            "href": "#home"
+        },
+        {
+            "text": "Sobre",
+            "href": "#about-me"
+        },
+        {
+            "text": "Projetos",
+            "href": "#projects"
+        },
+        {
+            "text": "Contato",
+            "href": "#contact"
+        }
+    ]
+}

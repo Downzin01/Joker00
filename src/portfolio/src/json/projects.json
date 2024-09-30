@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Downzin-me",
+        "description": "✨ Projeto pessoal para direcionamento de links de redes sociais e apresentação pessoal em React.js",
+        "image": "./src/img/projects/downzin-me.png",
+        "liveDemo": "https://downzin-me.vercel.app", 
+        "githubRepo": "https://github.com/Downzin01/downzin-me" 
+    },
+    {
+        "title": "Algoritmo JS",
+        "description": "✨ Repositório para anotações e atividades no curso de algoritmo com Javascript no Senac Americana",
+        "image": "./src/img/projects/algoritmo.png",
+        "liveDemo": "https://github.com/Downzin01/Algoritmo",
+        "githubRepo": "https://github.com/Downzin01/Algoritmo"
+    },
+    {
+        "title": "Joker00",
+        "description": "✨ Repositório para atividades individuais de programação proposta pelo Docente Paulo no Senac Americana",
+        "image": "./src/img/projects/joker00.png",
+        "liveDemo": "https://github.com/Downzin01/Joker00",
+        "githubRepo": "https://github.com/Downzin01/Joker00"
+    }
+]
