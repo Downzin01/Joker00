@@ -1,0 +1,68 @@
+.about-me {
+    padding: 4rem 2rem;
+    background-color: var(--light-background); /* Cor de fundo da sessão */
+    color: var(--dark-text); /* Cor do texto */
+    text-align: center;
+}
+
+.about-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-paragraph {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.about-paragraph p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    flex: 1;
+    margin: 0 1.5rem;
+}
+
+.about-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.about-image.left {
+    order: -1; /* Imagem à esquerda */
+}
+
+.about-image.right {
+    order: 1; /* Imagem à direita */
+}
+
+.about-content a {
+    color: var(--primary-color); /* Cor dos links */
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.about-content a:hover {
+    color: var(--secondary-color); /* Muda a cor ao passar o mouse */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+    .about-paragraph {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image {
+        margin-bottom: 1rem;
+    }
+
+    .about-image.left, .about-image.right {
+        order: 0;
+    }
+}

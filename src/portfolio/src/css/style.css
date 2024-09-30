@@ -1,0 +1,37 @@
+@import url('./principal/header.css');
+@import url('./principal/home.css');
+@import url('./principal/projects.css');
+@import url('./principal/contact.css');
+@import url('./principal/footer.css');
+@import url('./principal/about.css');
+
+:root {
+    --background-page: #FEFAF1;
+    --white: #fff ;
+    --black-default: #161616;
+    --dark-black: #050505;
+    --gradient-blues: linear-gradient(to right, #1a2aff, #0008ff, #000070);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+}
+
+body {
+    background-color: #FEFAF1;
+}
+
+section {
+    min-width: 0;
+    padding: 6rem 10%;
+    width: 100%;
+    position: relative;
+} 
+
+

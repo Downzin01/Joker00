@@ -1,0 +1,168 @@
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.home .home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.home img {
+    width: 30vw;
+    border-radius: 50%;
+}
+
+.home-infobox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.home-text h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+.home-text h1 {
+    font-size: 4rem;
+    font-weight: 600;
+}
+
+.home-text span {
+    background: var(--gradient-blues);
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+
+#typing-text {
+    border-right: 2px solid var(--black-default); /* Para o efeito de cursor */
+    white-space: nowrap; /* Para que o texto não quebre */
+    overflow: hidden; /* Para esconder o texto que não está visível */
+}
+
+@keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: var(--black-default); }
+}
+
+.blinking {
+    animation: blink 1s step-end infinite; /* Animação de piscar */
+}
+
+.home-button_group {
+    display: flex;
+    gap: 1rem;
+}
+
+.home-button {
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid var(--black-default);
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: var(--black-default);
+}
+
+.home-button:hover {
+    background-color: var(--black-default);
+    color: var(--white);
+}
+
+.home-socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.home-socials i {
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.home-socials i:hover {
+    transform: scale(1.1);
+}
+
+.fa-github {
+    color: #181717; /* Cor oficial do GitHub (preto) */
+}
+
+.fa-linkedin {
+    color: #0077B5; /* Cor oficial do LinkedIn (azul) */
+}
+
+.fa-instagram {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-discord {
+    color: #5865F2; /* Cor oficial do Discord (azul arroxeado) */
+}
+
+.fa-spotify {
+    color: #1DB954; /* Cor oficial do Spotify (verde) */
+}
+
+@media(max-width:1280px) {
+    .home .home-container {
+        gap: 3rem;
+    }
+}
+
+@media(max-width:768px) {
+    .home {
+        margin-top: 1.5rem;
+        gap: 3rem;
+    }
+
+    .home-container img{
+        width: 40vw;
+    }
+
+    .home-infobox span{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width:600px) {
+    .home {
+        flex-direction: column;
+        gap: 0rem;
+    }
+
+    .home-container img{
+        width: 50vw;
+    }
+
+    .home-text {
+        gap: 1rem;
+    }
+
+    .home-text h1 {
+        font-size: 3rem;
+    }
+
+    .home-text span{
+        font-size: 1.5rem;
+    }
+
+    .home-socials i {
+        font-size: 2rem;
+    }
+}

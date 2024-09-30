@@ -1,0 +1,74 @@
+.section-title {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.project-card {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    border: 2px solid var(--black-default);
+    border-radius: 2rem;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    background-color: var(--black-default);
+    color: var(--white);
+    transform: translateY(-10px)scale(1.02);
+}
+
+.project-card img {
+    width: 20vw;
+    border-radius: 1rem;
+}
+
+.project-card:hover .project-button {
+    border: 2px solid var(--white);
+    border-radius: 1rem;
+    color: var(--white);
+}
+
+.project-button {
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid var(--black-default);
+    text-decoration: none;
+    color: var(--black-default);
+}
+
+.project-card:hover .project-button:hover {
+    border: 2px solid var(--white);
+    background-color: var(--white);
+    color: var(--black-default);
+}
+
+.project-card h3 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.project-buttom_group {
+    display: flex;
+    gap: 1rem;
+}
+
+@media(max-width:600px) {
+    .project-card img {
+        width: 50vw;
+        border-radius: 1rem;
+    }
+}
